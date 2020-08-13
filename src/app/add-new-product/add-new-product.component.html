@@ -1,0 +1,24 @@
+
+<div class="form-row col-4 wrapper" >
+   <div class="col ">
+      <label for="idProduct">ID</label>
+     <input type="number" class="form-control" placeholder="ID" id="idProduct" [(ngModel)]="idProduct" >
+   </div>
+   <div class="col">
+     <label for="nameProduct">Name</label>
+     <input type="text" class="form-control" placeholder="Name" id="nameProduct" [(ngModel)]="nameProduct" >
+   </div>
+   <div class="col">
+      <label for="priceProduct">Price</label>
+      <input type="text" class="form-control" placeholder="Price" id="priceProduct" [(ngModel)]="priceProduct">
+    </div>
+    <div class="mySelect">
+      <label for="categoryProduct">Category</label>
+      <select class="custom-select" id="categoryProduct" [(ngModel)]="categoryProduct" >
+        <option>category1</option >
+        <option>category2</option>
+        <option>category3</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block" (click)=onSave()>ADD PRODUCT</button>
+   </div>
